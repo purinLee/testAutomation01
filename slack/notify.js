@@ -2,11 +2,12 @@ const fetch = require('node-fetch');
 const fs = require('fs');
 
 const webhookUrl = process.env.SLACK_WEBHOOK_URL;
+const reportUrl = 'https://purinLee.github.io/testAutomation01/playwright-report/index.html';
 
 const summary = `
 *Playwright 테스트 완료*
-결과: [HTML 리포트 보기]
-시간: ${new Date().toLocaleString()}
+Result: <${reportUrl}|HTML 리포트 보기>
+Time: ${new Date().toLocaleString()}
 `;
 
 async function sendSlackMessage() {
