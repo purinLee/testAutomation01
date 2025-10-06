@@ -1,6 +1,0 @@
-# Node.js 프로젝트일 경우 예시
-node_modules/
-.env
-*.log
-dist/
-.DS_Store

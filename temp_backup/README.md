@@ -1,1 +1,0 @@
-# Playwright + Slack + CI/CD 자동화 테스트
