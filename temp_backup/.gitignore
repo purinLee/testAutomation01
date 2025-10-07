@@ -1,0 +1,6 @@
+# 목록
+node_modules/
+.env
+*.log
+dist/
+.DS_Store
