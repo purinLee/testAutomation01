@@ -31,7 +31,7 @@ jobs:
       - name: Copy report to separate folder
         run: |
           mkdir -p public/playwright-report
-          cp -r playwright-report/* public/playwright-report/
+          cp -a playwright-report/. public/playwright-report/
 
       - name: Upload HTML report artifact
         uses: actions/upload-artifact@v4
