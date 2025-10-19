@@ -14,7 +14,7 @@ VS Code
 VS Code 확장 프로그램
 Playwright Test for VSCode
 
-### 프로젝트 설정
+## 프로젝트 설정
 필요한 모듈 설치
 npm install
 npx playwright install
@@ -28,7 +28,7 @@ npx playwright show-report
 헤드 모드로 실행 (브라우저 UI 켜짐)
 npx playwright test --headed
 
-#### CI/CD 파이프라인 (GitHub Actions)
+## CI/CD 파이프라인 (GitHub Actions)
 자동화 동작 흐름
 1. main 브랜치에 코드 푸시
 2. GitHub Actions가 실행됨
@@ -36,3 +36,10 @@ npx playwright test --headed
 4. HTML 리포트 생성
 5. Slack Webhook으로 테스트 결과 요약 전송
 6. 리포트를 GitHub Pages에 자동 배포(GitHub Actions에서 생성된 HTML 리포트를 GitHub Pages에 publish한 후, Slack에 리포트 링크 자동 전송)
+
+## 주요 검증 항목
+- 검색 결과 페이지로 이동 확인
+- 페이지 제목에 키워드 포함 여부
+- 페이지 본문 내 키워드 등장 횟수 확인
+- 테스트 간 단계의 성능 측정
+
